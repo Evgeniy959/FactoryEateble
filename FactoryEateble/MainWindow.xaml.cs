@@ -37,7 +37,7 @@ namespace FactoryEateble
                 something = factory.GetEateble(3);
             if (rb4.IsChecked == true)
                 something = factory.GetEateble(4);
-            if(something is IceCream ice) //|| (something is Chocolate cho)
+            if(something is IceCream ice) 
             MessageBox.Show(ice.Eat());
             if (something is Chocolate cho)
                 MessageBox.Show(cho.Eat());
