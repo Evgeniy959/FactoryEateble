@@ -8,14 +8,17 @@ namespace FactoryEateble
 {
     class Factory
     {
+        List<IEateble> Menu;
+        public Factory(List<IEateble> menu) 
+        {
+            Menu = menu;
+        }
+
         public IEateble GetEateble(int num) 
         {
-            switch (num) 
+            if (num < Menu.Count) 
             {
-                case 1: return new IceCream("Пломбир"); break;  
-                case 2: return new IceCream("Эскимо"); break;  
-                case 3: return new Chocolate ("Сникерс", 50); break;  
-                case 4: return new Chocolate ("Марс", 100); break;  
+                return Menu[num];
             }
             return null;
         }
