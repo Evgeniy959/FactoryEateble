@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryEateble
 {
-    class Chocolate
+    class Chocolate: IEateble
     {
         public string Name { get; set; }
         public int Mass { get; set; }
@@ -17,7 +17,7 @@ namespace FactoryEateble
         }
         public string Eat()
         {
-            return "Вы съели " + Name + "массой " + Mass.ToString() + "грамм";
+            return "Вы съели " + Name + " массой " + Mass.ToString() + " грамм";
         }
     }
 }

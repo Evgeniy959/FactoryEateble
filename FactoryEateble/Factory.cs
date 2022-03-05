@@ -8,7 +8,7 @@ namespace FactoryEateble
 {
     class Factory
     {
-        public object GetEateble(int num) 
+        public IEateble GetEateble(int num) 
         {
             switch (num) 
             {

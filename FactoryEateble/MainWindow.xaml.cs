@@ -27,7 +27,7 @@ namespace FactoryEateble
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            object something = null;
+            IEateble something = null;
             Factory factory = new Factory();
             if (rb1.IsChecked == true)
                 something = factory.GetEateble(1);
@@ -37,10 +37,7 @@ namespace FactoryEateble
                 something = factory.GetEateble(3);
             if (rb4.IsChecked == true)
                 something = factory.GetEateble(4);
-            if(something is IceCream ice) //|| (something is Chocolate cho)
-            MessageBox.Show(ice.Eat());
-            if (something is Chocolate cho)
-                MessageBox.Show(cho.Eat());
+            MessageBox.Show(something.Eat());
         }
     }
 }

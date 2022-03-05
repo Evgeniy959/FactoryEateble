@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryEateble
 {
-    class IceCream
+    class IceCream: IEateble
     {
         public string Name { get; set; }
         public IceCream(string name)
