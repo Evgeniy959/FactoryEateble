@@ -17,9 +17,7 @@ namespace FactoryEateble
         public IEateble GetEateble(int num) 
         {
             if (num < Menu.Count) 
-            {
                 return Menu[num];
-            }
             return null;
         }
     }
