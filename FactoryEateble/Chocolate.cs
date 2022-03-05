@@ -17,7 +17,7 @@ namespace FactoryEateble
         }
         public string Eat()
         {
-            return "Вы съели " + Name + "массой " + Mass.ToString() + "грамм";
+            return "Вы съели " + Name + " массой " + Mass.ToString() + " грамм";
         }
     }
 }
